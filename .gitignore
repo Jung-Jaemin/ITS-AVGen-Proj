@@ -1,0 +1,11 @@
+# Nerfies template source (not needed for the website)
+**/nerfies.github.io-main/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Backup files
+*.backup
+*.bak
+index_backup.txt
