@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Inference-Time Scaling for Joint Audio–Video Generation">
+  <meta name="description" content="Inference-Time Scaling for Joint Audio-Video Generation">
   <meta name="keywords" content="Inference-Time Scaling, Audio-Video Generation, Multimodal Generation, Generative AI, TMLR">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ITS-AVGen: Inference-Time Scaling for Joint Audio–Video Generation</title>
+  <title>ITS-AVGen: Inference-Time Scaling for Joint Audio-Video Generation</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
@@ -107,7 +107,7 @@
     /* ─── Demo Cards ─── */
     .demo-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
     @media (max-width: 768px) { .demo-grid { grid-template-columns: 1fr; } }
-    .supp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 1.5rem; }
+    .supp-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 1.5rem; }
     @media (max-width: 768px) { .supp-grid { grid-template-columns: 1fr; } }
 
     .demo-card {
@@ -240,7 +240,9 @@
 <section class="section" style="padding-top:2.5rem; padding-bottom:2.5rem;">
   <div class="container is-max-desktop has-text-centered">
     <div class="teaser-wrap">
-      <img src="./static/images/7_avits.gif" alt="ITS-AVGen teaser">
+      <video controls playsinline style="width:100%; display:block;">
+        <source src="./static/videos/project_video.mp4" type="video/mp4">
+      </video>
     </div>
     <p class="teaser-caption">
       <strong>Inference-Time Scaling (ITS)</strong> boosts joint audio-video generation quality at inference time
@@ -426,6 +428,16 @@
     <p style="font-size:0.8rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:#999; margin-top:2.5rem; margin-bottom:1rem;">Supplementary Material</p>
     <div class="supp-grid">
 
+      <a href="./prompt_test/index.html" class="supp-card">
+        <div class="card-thumb supp" style="background:linear-gradient(90deg,#f3e5f5,#ce93d8);"></div>
+        <div class="card-body">
+          <div class="card-tags"><span class="ctag gray" style="font-size:0.62rem;">Prompt</span><span class="ctag blue" style="font-size:0.62rem;">JavisDiT</span></div>
+          <p class="card-title">Prompt Test</p>
+          <p class="card-desc">Qualitative examples across diverse text prompts.</p>
+          <span class="card-cta">View &rarr;</span>
+        </div>
+      </a>
+
       <a href="./page_appendix_demo1/index.html" class="supp-card">
         <div class="card-thumb supp"></div>
         <div class="card-body">
@@ -449,19 +461,9 @@
       <a href="./failure_case/index.html" class="supp-card">
         <div class="card-thumb supp" style="background:linear-gradient(90deg,#ffe0e0,#ffb3b3);"></div>
         <div class="card-body">
-          <div class="card-tags"><span class="ctag gray" style="font-size:0.62rem;">Analysis</span></div>
+          <div class="card-tags"><span class="ctag gray" style="font-size:0.62rem;">Analysis</span><span class="ctag blue" style="font-size:0.62rem;">JavisDiT</span></div>
           <p class="card-title">Failure Cases</p>
           <p class="card-desc">Cases where ITS does not fully overcome generation limitations.</p>
-          <span class="card-cta">View &rarr;</span>
-        </div>
-      </a>
-
-      <a href="./prompt_test/index.html" class="supp-card">
-        <div class="card-thumb supp" style="background:linear-gradient(90deg,#f3e5f5,#ce93d8);"></div>
-        <div class="card-body">
-          <div class="card-tags"><span class="ctag gray" style="font-size:0.62rem;">Prompt</span></div>
-          <p class="card-title">Prompt Test</p>
-          <p class="card-desc">Qualitative examples across diverse text prompts.</p>
           <span class="card-cta">View &rarr;</span>
         </div>
       </a>
@@ -485,7 +487,7 @@
         <div class="bibtex-box" id="bibtex-content">
           <button class="copy-btn" onclick="copyBibtex()">Copy</button>
 <pre>@article{jung2026its,
-  title     = {Inference-Time Scaling for Joint Audio--Video Generation},
+  title     = {Inference-Time Scaling for Joint Audio-Video Generation},
   author    = {Jung, Jaemin and Rho, Kyeongha and Shin, Inkyu and Chung, Joon Son},
   journal   = {Transactions on Machine Learning Research},
   year      = {2026}
